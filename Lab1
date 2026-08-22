@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Rhudd {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Hello!\n");
+        System.out.print("Please Input the Following:\n\n");
+
+        System.out.print("Your Name: "); 
+        String name = input.nextLine();
+
+        System.out.print("Your Score (0-100): ");
+        Integer score = input.nextInt();
+
+        System.out.print("\nHi " + name);
+        System.out.print("\nYour score out of 100 is " + score);
+
+    }
+}
