@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Rhudd2 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner (System.in);
+
+        //1. Write a program that uses if-else to determine if a number is positive or negative.
+        System.out.print("For Number 1!\n");
+        System.out.print("Please Enter A Number: "); 
+        Integer number = input.nextInt();
+
+        if (number > 0) {
+            System.out.print("The number you entered is positive.");
+        } else if (number < 0) {
+            System.out.print("The number you entered is negative.");
+        } else {
+            System.out.print("The number you entered is zero.");
+        }
+
+        //2. Create a program that return if the age is underage(minor), legal age or senior citizen.
+        System.out.print("\n\nFor Number 2!");
+        System.out.print("\nPlease Enter Your Age: ");
+        Integer age = input.nextInt();
+
+        if (age < 18) {
+            System.out.print("You are a minor!");
+        } 
+        else if (age >= 18 && age < 60) {
+            System.out.print("You are of legal age!");
+        } 
+        else {
+            System.out.print("You are a senior citizen!");
+        }
+
+        //3. Create a program that get a number from the user and display multiplication table using loops.
+        System.out.print("\n\nFor Number 3!");
+        System.out.print("\nPlease Enter A Number To Multiply: ");
+        Integer multiply = input.nextInt();
+
+        System.out.print("\nMultiplication Table Of " + multiply + ":\n");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(multiply + " x " + i + " = " + (multiply * i));
+        }
+
+    }
+}
